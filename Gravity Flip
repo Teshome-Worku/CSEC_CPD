@@ -1,0 +1,4 @@
+n=int(input())
+m=list(map(int,input().strip().split()))
+sor=sorted(m, reverse=False)
+print(" ".join(map(str,sor)))
