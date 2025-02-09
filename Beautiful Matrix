@@ -1,0 +1,11 @@
+mat=[]
+for i in range(5):
+    row=list(map(int,input().strip().split()))
+    mat.append(row)
+for i in range(5):
+    for j in range(5):
+        if mat[i][j]==1:
+            x,y=i+1,j+1
+            break
+moves=abs(x-3)+abs(y-3)
+print(moves)
