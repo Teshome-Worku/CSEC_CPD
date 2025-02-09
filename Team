@@ -1,0 +1,7 @@
+n=int(input())
+solvable_prob=0
+for _ in range(n):
+    a,b,c=map(int,input().split())
+    if a+b+c>1:
+        solvable_prob+=1
+print(solvable_prob)
