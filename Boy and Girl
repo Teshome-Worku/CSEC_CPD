@@ -1,0 +1,12 @@
+s=input()
+l=[]
+c=0
+for char in s:
+    if char not in l:
+        l.append(char)
+        c+=1
+if c%2==0:
+    print("CHAT WITH HER!")
+else:
+    print("IGNORE HIM!")
+
