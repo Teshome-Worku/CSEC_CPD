@@ -1,0 +1,10 @@
+name = input().strip()
+current_position = ord('a')
+total_rot = 0
+for char in name:
+    target_position = ord(char)
+    clockwise_dist = (target_position - current_position + 26) % 26
+    counterclockwise_dist = (current_position - target_position + 26) % 26
+    total_rot += min(clockwise_dist, counterclockwise_dist)
+    current_position = target_position
+print(total_rot)
