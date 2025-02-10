@@ -1,0 +1,12 @@
+n = int(input())
+orientations = []
+for _ in range(n):
+    orientation = input().strip()
+    orientations.append(orientation)
+group_count = 0
+previous_orient = None
+for orient in orientations:
+    if orient != previous_orient:
+        group_count += 1
+        previous_orient = orient  
+print( group_count)
