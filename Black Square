@@ -1,0 +1,12 @@
+a1, a2, a3, a4 = map(int, input().split())
+s = input()
+total_cal = 0
+cal_map = {
+    '1': a1,
+    '2': a2,
+    '3': a3,
+    '4': a4
+}
+for char in s:
+    total_cal += cal_map[char]
+print(total_cal)
